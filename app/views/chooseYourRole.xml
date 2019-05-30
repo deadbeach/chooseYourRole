@@ -1,0 +1,29 @@
+<Alloy>
+
+	<Collection id="quiz" src="quiz" instance="true" />
+
+	<Window class="container">
+		<View class="main">
+
+			<ImageView touchEnabled="false" class="top-left-slant" image="/images/top-left-slant.png" />
+			<ImageView if="Alloy.Globals.notHighContrast" touchEnabled="false" class="yellow-angle-background" image="/images/yellow-angle-background.png" />
+
+			<View class="section-name-container">
+				<Label id="sectionName" class="section-name">Schools</Label>
+			</View>
+
+			<View class="page-title">
+				<View class="pageTitleInner">
+					<Label class="pageTitleText HCWhiteText">Find your role quiz</Label>
+				</View>
+			</View>
+
+			<View id="contentWrapper">
+				<View id="questionWrapper"></View>
+			</View>
+
+			<Require type="view" src="school/bottomMenu" />
+
+		</View>
+	</Window>
+</Alloy>

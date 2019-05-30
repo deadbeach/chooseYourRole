@@ -1,0 +1,54 @@
+
+".container" : {
+ 	height: "100%",
+ 	backgroundColor: Alloy.Globals.yellow,
+ 	width: "100%",
+}
+
+".container[if=Alloy.Globals.highContrast]" : {
+    height: "100%",
+    backgroundColor: "#000",
+    width: "100%",
+}
+
+".main" : {
+	layout: "composite",
+	width: "100%",
+	height: "100%",
+	top:0
+}
+
+".page-title":{
+	width: Ti.UI.SIZE,
+	height: "25%",
+	top: 0,
+}
+
+".pageTitleInner":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout:"horizontal",
+}
+
+".pageTitleText":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	top:0,
+	font:{
+		fontSize: Alloy.Globals.titleSize,
+		fontFamily: Alloy.Globals.gillSans
+	}
+}
+
+"#contentWrapper":{
+	height:"30%",
+	top:"35%",
+	width: "90%",
+	left: "5%",
+}
+
+"#questionWrapper":{
+	height: "100%",
+	width: "100%"
+}
